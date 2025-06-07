@@ -3,8 +3,26 @@ import { createRoot } from 'react-dom/client'
 import 'virtual:uno.css'
 import './index.css'
 
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+import DashboardLayout from './layouts/dashboard.layout'
+import DashboardIndex from './views/dashboard/dashboard.index'
+
+const router = createBrowserRouter([
+    {
+        path: '',
+        element: <DashboardLayout/>,
+        children: [
+            {
+                index: true,
+                element: <DashboardIndex/>
+            }
+        ]
+    }
+]);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <p className='text-red-300'>Pruebando</p>
+    <RouterProvider router={ router }/>
   </StrictMode>,
 )
