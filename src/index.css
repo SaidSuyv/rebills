@@ -1,0 +1,7 @@
+html,body,div#root{ height: 100dvh; }
+
+div#root
+{
+  background-color: #222222;
+  color: white;
+}
