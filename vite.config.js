@@ -6,12 +6,14 @@ import path from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
-    resolve: {
+  resolve: {
     alias: {
-        '@': path.resolve("src")
-    }},
+      '@': path.resolve("src")
+    }
+  },
   plugins: [
     react(),
     UnoCSS(),
   ],
+  base: '/rebills'
 })

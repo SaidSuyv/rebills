@@ -19,7 +19,7 @@ const router = createBrowserRouter([
             }
         ]
     }
-]);
+], { basename: '/rebills' });
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

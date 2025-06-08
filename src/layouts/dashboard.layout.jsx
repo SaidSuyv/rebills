@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 export default function DashbardLayout ()
 {
     return (
-        <main className='h-full grid grid-rows-12 md:grid-rows-1 md:grid-cols-12'>
+        <main className='h-full grid grid-rows-12 md:grid-rows-1 md:grid-cols-12 p-3'>
             <NavComponent />
             <Outlet />
         </main>
